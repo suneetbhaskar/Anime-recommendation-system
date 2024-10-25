@@ -1,0 +1,36 @@
+version: '3'
+services:
+  anime_recommender:
+    container_name: anime_mongoDB
+    image: mongo
+    networks:
+      - main_network
+    ports:
+      - "27017:27017"
+
+  backend:
+    container_name: backend_app
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    ports:
+      - "9099:9099"
+    depends_on:
+      - anime_recommender
+    networks:
+      - main_network
+
+  frontend:
+    container_name: frontend_app
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    depends_on:
+      - backend
+    networks:
+      - main_network
+
+networks:
+  main_network:
