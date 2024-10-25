@@ -12,7 +12,7 @@ Installation Steps
 Clone the Repository: Use Git LFS to clone this repository to your local machine.
 
 
-git lfs clone https://github.com/ishimanshu/AnimeRecommendation.git
+
 Obtain a MyAnimeList API client ID and create an env var in root
 
 Launch the application:
