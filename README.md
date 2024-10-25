@@ -1,5 +1,5 @@
 # Anime-recommendation-system
-<h3 = Overview> <br>
+<h3> Overview </h3> <br>
 Welcome to the Anime Recommendation System! This project aims to assist anime enthusiasts in discovering new and exciting anime titles tailored to their preferences. By combining data from MyAnimeList with a custom-trained recommendation model, our system employs both genre-based and user-based recommendation strategies. This fusion enhances the accuracy and versatility of our recommendations. Additionally, the integration of the MyAnimeList API enriches the user experience by providing detailed information about each recommended anime.
 
 Anime Recommendation System
